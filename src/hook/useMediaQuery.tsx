@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 
 const mediaQueries: Map<string, string> = new Map();
 const breakpoints: { [key: string]: number } = {
-    phoneSmall: 380,
+    phoneSmall: 400,
     phoneMedium: 576,
     phoneLarge: 768,
     tablet: 992,

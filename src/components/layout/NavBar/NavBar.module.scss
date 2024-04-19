@@ -1,0 +1,36 @@
+@import "../../../styles/breakpoints.module";
+
+.NavBar {
+  width: 100%;
+  padding: 40px 0;
+  display: flex;
+  gap: 13.6875rem;
+  justify-content: flex-end;
+  align-items: center;
+
+  @include size-phone-large {
+    display: none;
+  }
+
+  ul {
+    display: flex;
+    list-style-type: none;
+    gap: 40px;
+
+    li {
+      cursor: pointer;
+    }
+
+    .new {
+      position: relative;
+
+      span {
+        &:first-child {
+          position: absolute;
+          right: -35%;
+          top: -40%;
+        }
+      }
+    }
+  }
+}

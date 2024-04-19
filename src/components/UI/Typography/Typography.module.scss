@@ -1,0 +1,170 @@
+@import "../../../styles/breakpoints.module";
+@import "../../../styles/variables.module";
+
+.typography {
+  --font-size-150: 150px;
+  --font-size-83: 83px;
+  --font-size-57: 57px;
+  --font-size-50: 50px;
+  --font-size-44: 44px;
+  --font-size-42: 42px;
+  --font-size-39: 39px;
+  --font-size-32: 32px;
+  --font-size-26: 26px;
+  --font-size-24: 24px;
+  --font-size-20: 20px;
+  --font-size-19: 19px;
+  --font-size-16: 16px;
+  --font-size-14: 14px;
+  --font-size-12: 12px;
+  --font-size-8: 8px;
+
+  font-size: var(--font-size-20);
+}
+
+.typography-150 {
+  font-size: var(--font-size-150);
+}
+
+.typography-83 {
+  font-size: var(--font-size-83);
+}
+
+.typography-48 {
+  font-size: var(--font-size-48);
+}
+
+.typography-57 {
+  font-size: var(--font-size-57);
+}
+
+.typography-50 {
+  font-size: var(--font-size-50);
+}
+
+.typography-44 {
+  font-size: var(--font-size-44);
+}
+
+.typography-42 {
+  font-size: var(--font-size-42);
+}
+
+.typography-39 {
+  font-size: var(--font-size-39);
+}
+
+.typography-32 {
+  font-size: var(--font-size-32);
+}
+
+.typography-26 {
+  font-size: var(--font-size-26);
+}
+
+.typography-24 {
+  font-size: var(--font-size-24);
+}
+
+.typography-20 {
+  font-size: var(--font-size-20);
+}
+
+.typography-19 {
+  font-size: var(--font-size-19);
+}
+
+.typography-16 {
+  font-size: var(--font-size-16);
+}
+
+.typography-14 {
+  font-size: var(--font-size-14);
+}
+
+.typography-12 {
+  font-size: var(--font-size-12);
+}
+
+.typography-8 {
+  font-size: var(--font-size-8);
+}
+
+.colorPrimary {
+  color: $color-primary;
+}
+
+.colorSecondary {
+  color: $color-white;
+}
+
+.colorBlue {
+  color: $color-blue;
+}
+
+.colorGreen {
+  color: $color-green;
+}
+
+.alignStart {
+  text-align: left;
+}
+
+.alignCenter {
+  text-align: center;
+}
+
+.alignEnd {
+  text-align: right;
+}
+
+.noWrap {
+  white-space: nowrap;
+}
+
+.weightBold {
+  font-weight: 700;
+}
+
+.weightNormal {
+  font-weight: normal;
+}
+
+.weightSemiBold {
+  font-weight: 600;
+}
+
+.weightThin {
+  font-weight: 300;
+}
+
+.underlined {
+  border-bottom: 1px solid currentColor;
+}
+
+.inherit {
+  line-height: inherit;
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.titlecase {
+  text-transform: capitalize;
+}
+
+.cursor {
+  cursor: pointer;
+}
