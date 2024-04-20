@@ -4,12 +4,19 @@
   width: 100%;
   padding: 40px 0;
   display: flex;
-  gap: 13.6875rem;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
 
   @include size-phone-large {
     display: none;
+  }
+
+  .span {
+    &:nth-child(1) {
+      @include size-tablet {
+        display: none;
+      }
+    }
   }
 
   ul {

@@ -16,6 +16,7 @@ const NavBar = () => {
 
     return (
         <header className={classNames(styles.NavBar, "container")}>
+            <span className={styles.span}/>
 
             <ul>
                 {route.map((item) => (

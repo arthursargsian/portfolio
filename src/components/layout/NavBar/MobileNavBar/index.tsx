@@ -45,8 +45,8 @@ const MobileNavBar = () => {
                     ))}
                 </header>
             </nav>
-
             <Logo/>
+
         </header>
     );
 };
