@@ -39,7 +39,6 @@ const Workers = () => {
                     See their portfolios
                 </Typography>
 
-
                 <Brands/>
 
 
