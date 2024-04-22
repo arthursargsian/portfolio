@@ -1,12 +1,14 @@
 @import "../../../../styles/breakpoints.module";
 @import "../../../../styles/variables.module";
 
+
 .MobileNavBar {
   width: 100%;
   padding: 40px 0;
   justify-content: space-between;
   align-items: center;
   display: none;
+  z-index: 11;
 
   @include size-phone-large {
     display: flex;
@@ -51,10 +53,11 @@
       span {
         &:first-child {
           position: absolute;
-          right: -50%;
+          right: -40%;
           top: -40%;
         }
       }
     }
   }
 }
+

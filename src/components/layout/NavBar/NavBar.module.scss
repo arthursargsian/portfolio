@@ -24,6 +24,10 @@
     list-style-type: none;
     gap: 40px;
 
+    @include size-tablet {
+      gap: 30px;
+    }
+
     li {
       cursor: pointer;
     }
@@ -34,7 +38,7 @@
       span {
         &:first-child {
           position: absolute;
-          right: -35%;
+          right: -20%;
           top: -40%;
         }
       }

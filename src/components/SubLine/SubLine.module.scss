@@ -1,0 +1,12 @@
+@import "../../styles/breakpoints.module";
+
+.SubLine {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+
+  @include size-phone-medium {
+    gap: 8px;
+  }
+}

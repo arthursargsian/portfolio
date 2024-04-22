@@ -3,23 +3,17 @@ import styles from "./NavBar.module.scss";
 import {Typography} from "@/components/UI/Typography";
 import Logo from "@/components/Logo";
 import classNames from "classnames";
-import {useMediaQuery} from "@/hook/useMediaQuery";
+import {NavigationProps, Route} from "@/interfaces/props";
 
-const route = [
-    {id: 1, name: "Simple V6", path: "/", new: true},
-    {id: 2, name: "SHOWCASE", path: "/showcase", new: false},
-    {id: 3, name: "FEATURES", path: "/features", new: false},
-    {id: 4, name: "RESOURCES", path: "/resources", new: false}
-]
 
-const NavBar = () => {
+const NavBar = ({route}: NavigationProps) => {
 
     return (
-        <header className={classNames(styles.NavBar, "container")}>
+        <header className={styles.NavBar}>
             <span className={styles.span}/>
 
             <ul>
-                {route.map((item) => (
+                {route.map((item: Route) => (
                     <li key={item.id} className={classNames({[styles.new]: item.new})}>
                         {item.new && <Typography
                             letters={"uppercase"}
@@ -30,7 +24,7 @@ const NavBar = () => {
                         </Typography>}
                         <Typography
                             letters={"uppercase"}
-                            size={12}
+                            size={19}
                             letterSpacing={1.5}
                             weight={"normal"}>
                             {item.name}
@@ -38,6 +32,7 @@ const NavBar = () => {
                     </li>
                 ))}
             </ul>
+
             <Logo/>
         </header>
     );

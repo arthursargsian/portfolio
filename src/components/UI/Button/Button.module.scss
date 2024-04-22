@@ -1,0 +1,141 @@
+@import "../../../styles/breakpoints.module";
+@import "../../../styles/variables.module";
+
+.button {
+  display: flex;
+  padding: 0 12px;
+  cursor: pointer;
+  font-size: 17px;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.1s ease-in;
+
+  .title {
+    font-weight: 600;
+  }
+
+  &.disabled {
+    opacity: .3;
+    pointer-events: none;
+  }
+
+  &:only-of-type {
+    margin-right: 0;
+  }
+
+  &.fixed {
+    width: 200px;
+    border-radius: 30px;
+    background-color: $color-primary;
+  }
+
+  &.fullWidth {
+    width: 100% !important;
+  }
+
+  &.smallButton {
+    padding: 0;
+    width: 135px;
+    height: 34px;
+    border: none;
+  }
+
+  // animation
+
+  &.animation {
+    transform: translate(0%, 0%);
+    padding: 20px 50px;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: $color-white;
+    border: 3px solid $color-white;
+    border-radius: 40px;
+    max-width: 260px !important;
+    font-weight: 400;
+
+    i {
+      position: absolute;
+      z-index: -1;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 100%;
+      height: 260px;
+    }
+
+    i:before,
+    i:after {
+      content: "";
+      position: absolute;
+      width: 200%;
+      height: 200%;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, -75%);
+    }
+
+    i:before {
+      width: 530px;
+      height: 530px;
+      border-radius: 46%;
+      background-color: $color-accent;
+      animation: animate 5s linear infinite;
+    }
+
+    i:after {
+
+      border-radius: 40%;
+      background-color: $color-accent;
+      animation: animate 10s linear infinite;
+    }
+
+    @keyframes animate {
+      0% {
+        transform: translate(-50%, -75%) rotate(0deg);
+      }
+      100% {
+        transform: translate(-50%, -75%) rotate(360deg);
+      }
+    }
+  }
+
+  //--------------
+
+  &.outlined {
+    background: transparent;
+    border: 3px solid $color-gray;
+    border-radius: 6px;
+  }
+
+  &.outlinedWhite {
+    background: transparent;
+    border: 3px solid $color-white;
+    color: $color-white;
+    border-radius: 6px;
+  }
+
+  &.contained {
+    border: none !important;
+  }
+
+  &.size-small {
+    min-width: fit-content;
+    font-size: 17px;
+    height: 60px !important;
+    padding: 0 30px;
+    border-radius: 99px !important;
+  }
+
+  &.primary {
+    color: $color-gray;
+  }
+
+  &.accent {
+    color: $color-white;
+  }
+
+  &.link {
+    text-decoration: none;
+  }
+}

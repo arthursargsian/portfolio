@@ -1,29 +1,32 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import styles from "./MobileNavBar.module.scss";
 import {Typography} from "@/components/UI/Typography";
 import Logo from "@/components/Logo";
 import classNames from "classnames";
-import Burger from "@/components/Burger";
+import Burger from "../../Burger";
 import {ArrowRight} from "../../../../../public/svg";
+import {NavigationProps, Route} from "@/interfaces/props";
 
-const route = [
-    {id: 1, name: "Simple V6", path: "/", new: true},
-    {id: 2, name: "SHOWCASE", path: "/showcase", new: false},
-    {id: 3, name: "FEATURES", path: "/features", new: false},
-    {id: 4, name: "RESOURCES", path: "/resources", new: false}
-]
 
-const MobileNavBar = () => {
+const MobileNavBar = ({route}: NavigationProps) => {
     const [isOpen, setOpen] = useState(false);
 
+    useEffect(() => {
+        if (isOpen) {
+            document.body.style.overflowY = 'hidden';
+        } else {
+            document.body.style.overflowY = 'auto';
+        }
+    }, [isOpen]);
+
     return (
-        <header className={classNames(styles.MobileNavBar, "container")}>
+        <header className={styles.MobileNavBar}>
             <Burger onClick={() => setOpen((prev) => !prev)}/>
 
             <nav className={classNames(styles.nav, {[styles.open]: isOpen})}>
                 <ArrowRight onClick={() => setOpen((prev) => !prev)}/>
                 <header>
-                    {route.map((item) => (
+                    {route.map((item: Route) => (
                         <span key={item.id} className={classNames({[styles.new]: item.new})}>
                         {item.new && <Typography
                             letters={"uppercase"}
@@ -35,7 +38,7 @@ const MobileNavBar = () => {
                         </Typography>}
                             <Typography
                                 letters={"uppercase"}
-                                size={12}
+                                size={16}
                                 letterSpacing={1.5}
                                 color={"secondary"}
                                 weight={"normal"}>
@@ -45,8 +48,8 @@ const MobileNavBar = () => {
                     ))}
                 </header>
             </nav>
-            <Logo/>
 
+            <Logo/>
         </header>
     );
 };

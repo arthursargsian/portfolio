@@ -11,3 +11,11 @@ export const ArrowRight = ({onClick}: Event) => (
         </g>
     </svg>
 );
+
+export const ArrowTop = ({onClick}: Event) => (
+    <svg onClick={onClick} width="34.000000" height="15.000000" viewBox="0 0 34 15" fill="none"
+         xmlns="http://www.w3.org/2000/svg">
+        <path id="Vector" d="M33.88 13.22L32.69 14.68L16.5 1.73L0.3 14.68L-0.89 13.22L16.5 -0.69L33.88 13.22Z"
+              fill="#000000" fillOpacity="1.000000" fillRule="nonzero"/>
+    </svg>
+);

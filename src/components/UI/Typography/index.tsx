@@ -1,8 +1,9 @@
 import classNames from 'classnames';
 import {RobotoRegular, RobotoThin, RobotoBold} from '@/../public/fonts/fonts';
 import styles from './Typography.module.scss';
+import {TypographyProps} from "@/interfaces/props";
 
-export const Typography = ({...props}) => {
+export const Typography = (props: TypographyProps) => {
     const {
         align,
         children,
@@ -11,6 +12,7 @@ export const Typography = ({...props}) => {
         element = 'span',
         lineHeight,
         noWrap,
+        fontWeight,
         inherit,
         size,
         underlined,
@@ -57,6 +59,7 @@ export const Typography = ({...props}) => {
             onClick={onClick}
             style={{
                 lineHeight: lineHeight !== undefined ? `${lineHeight}px` : undefined,
+                fontWeight: fontWeight !== undefined ? fontWeight : undefined,
                 letterSpacing: letterSpacing !== undefined ? `${letterSpacing}px` : undefined,
                 ...style,
             }}

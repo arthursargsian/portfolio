@@ -1,0 +1,36 @@
+@import "../../styles/breakpoints.module";
+
+.EditPart {
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .editPartBlock {
+    padding: 64px 0;
+  }
+
+  .editorImage {
+
+  }
+
+  .title {
+    margin-top: 57px;
+
+    @include size-tablet {
+      margin-top: 40px;
+    }
+  }
+
+  .description {
+    margin-top: 30px;
+    max-width: 930px;
+
+    @include size-tablet {
+      line-height: 35px !important;
+      margin-top: 20px;
+    }
+
+    @include size-phone-small {
+      line-height: 28px !important;
+    }
+  }
+}

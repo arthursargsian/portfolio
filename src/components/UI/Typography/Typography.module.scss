@@ -24,6 +24,14 @@
 
 .typography-150 {
   font-size: var(--font-size-150);
+
+  @include size-tablet {
+    font-size: 100px;
+  }
+
+  @include size-phone-large {
+    font-size: 60px;
+  }
 }
 
 .typography-83 {
@@ -36,6 +44,14 @@
 
 .typography-57 {
   font-size: var(--font-size-57);
+
+  @include size-tablet {
+    font-size: var(--font-size-50);
+  }
+
+  @include size-phone-small {
+    font-size: var(--font-size-32);
+  }
 }
 
 .typography-50 {
@@ -48,6 +64,14 @@
 
 .typography-42 {
   font-size: var(--font-size-42);
+
+  @include size-tablet {
+    font-size: var(--font-size-20);
+  }
+
+  @include size-phone-small {
+    font-size: var(--font-size-16);
+  }
 }
 
 .typography-39 {
@@ -72,10 +96,22 @@
 
 .typography-19 {
   font-size: var(--font-size-19);
+
+  @include size-tablet {
+    font-size: 16px;
+  }
 }
 
 .typography-16 {
   font-size: var(--font-size-16);
+
+  @include size-tablet {
+    font-size: var(--font-size-14);
+  }
+
+  @include size-phone-small {
+    font-size: 12px;
+  }
 }
 
 .typography-14 {
