@@ -6,6 +6,17 @@
 
   .editPartBlock {
     padding: 64px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 167px;
+
+    @include size-tablet {
+      gap: 100px;
+    }
+
+    @include size-phone-small {
+      gap: 60px;
+    }
   }
 
   .editorImage {

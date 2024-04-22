@@ -23,7 +23,7 @@ export interface TypographyProps {
     align?: 'start' | 'center' | 'end'
     children?: React.ReactNode
     className?: string
-    color?: 'primary' | 'secondary' | 'green' | 'blue' | string
+    color?: 'primary' | 'secondary' | 'green' | 'blue' | 'grey' | string
     element?: keyof JSX.IntrinsicElements
     lineHeight?: number
     noWrap?: boolean

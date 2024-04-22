@@ -33,6 +33,7 @@ export const Typography = (props: TypographyProps) => {
             [styles.colorSecondary]: color === 'secondary',
             [styles.colorGreen]: color === 'green',
             [styles.colorBlue]: color === 'blue',
+            [styles.colorGrey]: color === 'grey',
             [styles.alignStart]: align === 'start',
             [styles.alignCenter]: align === 'center',
             [styles.alignEnd]: align === 'end',

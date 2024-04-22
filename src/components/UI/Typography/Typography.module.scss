@@ -36,6 +36,14 @@
 
 .typography-83 {
   font-size: var(--font-size-83);
+
+  @include size-tablet {
+    font-size: var(--font-size-50);
+  }
+
+  @include size-phone-small {
+    font-size: 40px;
+  }
 }
 
 .typography-48 {
@@ -80,6 +88,14 @@
 
 .typography-32 {
   font-size: var(--font-size-32);
+
+  @include size-tablet {
+    font-size: var(--font-size-26);
+  }
+
+  @include size-phone-small {
+    font-size: var(--font-size-20);
+  }
 }
 
 .typography-26 {
@@ -136,6 +152,10 @@
 
 .colorBlue {
   color: $color-blue;
+}
+
+.colorGrey {
+  color: $color-gray;
 }
 
 .colorGreen {

@@ -47,11 +47,11 @@ svg {
 }
 
 ::-webkit-scrollbar-track {
-  background: $color-gray;
+  background: $color-primary;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: $color-primary;
+  background: $color-gray;
   transition: all 0.25s;
 }
 

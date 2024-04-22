@@ -1,0 +1,51 @@
+@import "src/styles/breakpoints.module";
+
+.Brands {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 80px 0 170px 0;
+  list-style: none;
+  align-items: center;
+  gap: 40px;
+
+
+  @include size-phone-large {
+    gap: 23px;
+  }
+
+
+  @include size-phone-medium {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  @include size-phone-small {
+    justify-content: unset;
+  }
+
+  li {
+    img {
+      max-width: 100%;
+      opacity: 0.4;
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    @include size-phone-small {
+      img {
+        width: 100% !important;
+      }
+    }
+
+    @include size-phone-medium {
+      img {
+        width: 90px;
+      }
+    }
+  }
+}
