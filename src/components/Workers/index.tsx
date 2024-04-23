@@ -3,6 +3,8 @@ import styles from "./Workers.module.scss";
 import SubLine from "@/components/SubLine";
 import {Typography} from "@/components/UI/Typography";
 import Brands from "@/components/Brands";
+import WorkerCard from "@/components/WorkerCard";
+import {workers} from "../../../public/mock/data";
 
 const Workers = () => {
     return (
@@ -41,6 +43,11 @@ const Workers = () => {
 
                 <Brands/>
 
+                <div className={styles.workersList}>
+                    {workers.map((item: any) => (
+                        <WorkerCard workers={item} key={item.id}/>
+                    ))}
+                </div>
 
             </div>
         </div>

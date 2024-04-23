@@ -20,9 +20,13 @@
     }
   }
 
-  .description {
-    @include size-phone-small {
-      margin-top: 10px;
+  .workersList {
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+
+    @include size-tablet {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
   }
 }
