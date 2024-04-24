@@ -9,7 +9,6 @@ import Button from "@/components/UI/Button";
 const ResponsiveService = () => {
     return (
         <div className={styles.ResponsiveService}>
-
             <div className={styles.firtsPart}>
                 <ResponsiveImage src={dog.src} className={styles.firtsPartImg}/>
 
@@ -47,7 +46,6 @@ const ResponsiveService = () => {
                         Show more
                     </Button>
                 </div>
-
             </div>
 
             <div className={styles.secondPart}>
@@ -87,10 +85,8 @@ const ResponsiveService = () => {
                             Show more
                         </Button>
                     </div>
-
                 </div>
                 <ResponsiveImage src={mobile.src} className={""}/>
-
             </div>
 
         </div>
