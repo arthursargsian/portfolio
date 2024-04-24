@@ -54,10 +54,6 @@
   font-size: var(--font-size-57);
 
   @include size-tablet {
-    font-size: var(--font-size-50);
-  }
-
-  @include size-phone-small {
     font-size: var(--font-size-32);
   }
 }
@@ -68,6 +64,14 @@
 
 .typography-44 {
   font-size: var(--font-size-44);
+
+  @include size-tablet {
+    font-size: var(--font-size-20);
+  }
+
+  @include size-phone-small {
+    font-size: var(--font-size-16);
+  }
 }
 
 .typography-42 {

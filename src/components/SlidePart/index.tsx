@@ -15,7 +15,7 @@ const SlidePart = () => {
     const settings = {
         dots: true,
         infinite: true,
-        speed: 500,
+        speed: 200,
         slidesToShow: 1,
         slidesToScroll: 1,
     };
@@ -50,7 +50,7 @@ const SlidePart = () => {
                                 </Typography>
 
                                 <div className={styles.control}>
-                                    <div>
+                                    <div className={styles.info}>
                                         <Typography
                                             element={"sub"}
                                             size={44}

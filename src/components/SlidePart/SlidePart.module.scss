@@ -47,6 +47,12 @@
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .info {
+    min-width: 300px;
   }
 
   .arrows {

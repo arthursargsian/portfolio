@@ -50,15 +50,15 @@ export const data = [
     {
         id: 2,
         image: image2.src,
-        title: "For creatives with exceptional taste and talent.",
+        title: "For photographers who capture the world's beauty.",
         subtitle: "Semplice is for",
-        description: "3D Designers",
+        description: "Writers",
     },
     {
         id: 3,
         image: image3.src,
-        title: "For creatives with exceptional taste and talent.",
+        title: "For writers who craft compelling narratives.",
         subtitle: "Semplice is for",
-        description: "3D Designers",
+        description: "Photographers",
     }
-]
+];
