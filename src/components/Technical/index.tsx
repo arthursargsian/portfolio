@@ -1,14 +1,13 @@
 import React from 'react';
-import styles from "./Customize.module.scss";
+import styles from "./Technical.module.scss";
 import SubLine from "@/components/SubLine";
 import {Typography} from "@/components/UI/Typography";
-import Brands from "@/components/Brands";
-import {workers} from "../../../public/mock/data";
-import WorkerCard from "@/components/WorkerCard";
+import TechnicalCard from "@/components/TechnicalCard";
+import {cards} from "../../../public/mock/data";
 
-const Customize = () => {
+const Technical = () => {
     return (
-        <div className={styles.Customize}>
+        <div className={styles.Technical}>
             <div className="container">
                 <SubLine
                     colorLine={"white"}
@@ -41,10 +40,16 @@ const Customize = () => {
                     customize and make it your own.
                 </Typography>
 
+                <div className={styles.cardsList}>
+                    {cards.map((item, index) => (
+                        <TechnicalCard key={item.id} item={item} index={index}/>
+                    ))}
+                </div>
+
 
             </div>
         </div>
     );
 };
 
-export default Customize;
+export default Technical;

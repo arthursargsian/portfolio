@@ -1,9 +1,8 @@
 @import "src/styles/variables.module";
 @import "src/styles/breakpoints.module";
 
-.Customize {
+.Technical {
   width: 100%;
-  height: 100vh;
   padding: 60px 0 80px;
   background: $color-primary;
 
@@ -24,7 +23,8 @@
 
   .description {
     margin-top: 30px;
-    max-width: 930px;
+    max-width: 730px;
+    margin-bottom: 150px;
 
     @include size-tablet {
       line-height: 35px !important;
@@ -33,6 +33,28 @@
 
     @include size-phone-small {
       line-height: 28px !important;
+    }
+  }
+
+  .cardsList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(19%, 1fr));
+    gap: 10px;
+
+    @include size-laptop {
+      grid-template-columns: repeat(auto-fit, minmax(23%, 1fr));
+    }
+
+    @include size-tablet {
+      grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+    }
+
+    @include size-phone-large {
+      grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+    }
+
+    @media (max-width: 460px) {
+      grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
     }
   }
 }

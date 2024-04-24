@@ -3,7 +3,7 @@ import EditPart from "@/components/EditPart";
 import Workers from "@/components/Workers";
 import SlidePart from "@/components/SlidePart";
 import Features from "@/components/Features";
-import Customize from "@/components/Customize";
+import Customize from "../components/Technical";
 
 export default function Home() {
     return (
