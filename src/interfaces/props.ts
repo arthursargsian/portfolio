@@ -57,7 +57,7 @@ export interface ButtonProps {
     className?: string;
     href?: string;
     radius?: number;
-    color?: 'primary' | 'secondary' | 'white' | 'black';
+    color?: 'primary' | 'secondary' | 'white' | 'black' | 'green' | 'blue' | 'grey';
 }
 
 export interface ResponsiveImageProps {

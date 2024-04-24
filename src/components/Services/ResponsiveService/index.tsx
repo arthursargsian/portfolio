@@ -1,64 +1,100 @@
 import React from 'react';
-import styles from "./AnimationService.module.scss";
-import backimage from "../../../../public/image/feature.jpeg";
+import styles from "./ResponsiveService.module.scss";
+import mobile from "../../../../public/image/mobjpeg.jpeg";
+import dog from "../../../../public/image/@.png";
 import {Typography} from "@/components/UI/Typography";
 import ResponsiveImage from "@/components/UI/ResponsiveImage";
 import Button from "@/components/UI/Button";
 
-const AnimationService = () => {
+const ResponsiveService = () => {
     return (
-        <div className={styles.AnimationService}>
+        <div className={styles.ResponsiveService}>
 
-            <div className={styles.desc}>
-                <Typography
-                    className={styles.title}
-                    element={"h2"}
-                    size={50}
-                    color={"secondary"}
-                    letterSpacing={1.4}
-                    lineHeight={30}
-                >
-                    Custom Animations
-                </Typography>
+            <div className={styles.firtsPart}>
+                <ResponsiveImage src={dog.src} className={styles.firtsPartImg}/>
 
-                <Typography
-                    className={styles.description}
-                    element={"p"}
-                    size={24}
-                    color={"secondary"}
-                    letterSpacing={1.4}
-                    lineHeight={20}
-                >
-                    However, even with these powerful visual tools at our disposal, occasional bugs may still arise.
-                    These bugs can manifest in various ways, from unexpected behavior in animations to inconsistencies
-                    across different devices and browsers.
-                </Typography>
+                <div className={styles.descBlock}>
+                    <Typography
+                        className={styles.title}
+                        element={"h2"}
+                        size={50}
+                        color={"primary"}
+                        letterSpacing={1.4}
+                        lineHeight={30}
+                        align={"center"}
+                    >
+                        Custom Type
+                    </Typography>
 
-                <Button
-                    variant={"outlined"}
-                    color={"white"}
-                    className={styles.button}
-                >
-                    Show more
-                </Button>
+                    <Typography
+                        className={styles.description}
+                        element={"p"}
+                        size={24}
+                        color={"primary"}
+                        letterSpacing={1.4}
+                        lineHeight={20}
+                        align={"center"}
+                    >
+                        We’re type lovers too. Upload self-hosted or web fonts in seconds, including variable typefaces.
+                        Build efficiently with your own global type system.
+                    </Typography>
 
-                <Typography
-                    size={16}
-                    color={"secondary"}
-                    letterSpacing={1.4}
-                    letters={"uppercase"}
-                >
-                    ARTWORK BY MEDIA.WORK
-                </Typography>
+                    <Button
+                        variant={"outlined"}
+                        className={styles.button}
+                        color={"grey"}
+                    >
+                        Show more
+                    </Button>
+                </div>
 
             </div>
 
-            <div className={styles.image}>
-                <ResponsiveImage src={backimage.src}/>
+            <div className={styles.secondPart}>
+                <div className="container">
+                    <div className={styles.descBlock}>
+                        <Typography
+                            className={styles.title}
+                            element={"h2"}
+                            size={50}
+                            color={"primary"}
+                            letterSpacing={1.4}
+                            lineHeight={30}
+                            align={"center"}
+                        >
+                            Custom Type
+                        </Typography>
+
+                        <Typography
+                            className={styles.description}
+                            element={"p"}
+                            size={24}
+                            color={"primary"}
+                            letterSpacing={1.4}
+                            lineHeight={20}
+                            align={"center"}
+                        >
+                            We’re type lovers too. Upload self-hosted or web fonts in seconds, including variable
+                            typefaces.
+                            Build efficiently with your own global type system.
+                        </Typography>
+
+                        <Button
+                            variant={"outlined"}
+                            className={styles.button}
+                            color={"grey"}
+                        >
+                            Show more
+                        </Button>
+                    </div>
+
+                </div>
+                <ResponsiveImage src={mobile.src} className={""}/>
+
             </div>
 
         </div>
     );
 };
 
-export default AnimationService;
+export default ResponsiveService;

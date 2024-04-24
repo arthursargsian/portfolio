@@ -44,6 +44,8 @@ const Button = (props: ButtonProps) => {
                 className,
                 styles.button,
                 {
+                    [styles.colorPrimary]: color === 'primary',
+                    [styles.colorSecondary]: color === 'secondary',
                     [styles.link]: href,
                     [styles.smallButton]: isSmall,
                     [styles.fixed]: isFixed,

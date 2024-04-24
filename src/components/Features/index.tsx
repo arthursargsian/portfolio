@@ -3,6 +3,7 @@ import styles from "./Features.module.scss";
 import SubLine from "@/components/SubLine";
 import {Typography} from "@/components/UI/Typography";
 import AnimationPart from "../Services/AnimationService";
+import ResponsiveService from "@/components/Services/ResponsiveService";
 
 const Features = () => {
     return (
@@ -30,6 +31,7 @@ const Features = () => {
                 </div>
             </div>
             <AnimationPart/>
+            <ResponsiveService/>
         </div>
     );
 };
