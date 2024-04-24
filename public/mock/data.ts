@@ -18,6 +18,17 @@ import image1 from "../image/car.png";
 import image2 from "../image/spacejpg.jpg";
 import image3 from "../image/camerajpg.jpg";
 
+import card1 from "@/../public/svg/ba.svg";
+import card2 from "@/../public/svg/fribbble.svg";
+import card3 from "@/../public/svg/block.svg";
+import card4 from "@/../public/svg/gallery.svg";
+import card5 from "@/../public/svg/grid.svg";
+import card6 from "@/../public/svg/instagram.svg";
+import card7 from "@/../public/svg/navigation.svg";
+import card8 from "@/../public/svg/transitionsvg.svg"
+import card9 from "@/../public/svg/image.svg"
+import card10 from "@/../public/svg/singlesvg.svg"
+
 export const brands = [
     {id: 1, logo: brand1},
     {id: 2, logo: brand2},
@@ -27,8 +38,7 @@ export const brands = [
     {id: 6, logo: brand6},
 ];
 
-
-export const workers: any = [
+export const workers = [
     {id: 1, avatar: worker1, name: "Erik Jonsson", position: "Design & Art Direction"},
     {id: 2, avatar: worker2, name: "Elena Miska", position: "Designer, art director & artist"},
     {id: 3, avatar: worker3, name: "Verena Michelitsch", position: "Independent designer & art director"},
@@ -60,5 +70,58 @@ export const data = [
         title: "For writers who craft compelling narratives.",
         subtitle: "Semplice is for",
         description: "Photographers",
+    }
+];
+
+export const cards = [
+    {
+        id: 1,
+        image: card1.src,
+        title: "Before/After",
+    },
+    {
+        id: 2,
+        image: card2.src,
+        title: "Dribbble",
+    },
+    {
+        id: 3,
+        image: card3.src,
+        title: "Blocks",
+    },
+    {
+        id: 4,
+        image: card4.src,
+        title: "Gallery Slider",
+    },
+    {
+        id: 5,
+        image: card5.src,
+        title: "Gallery Grid",
+    },
+    {
+        id: 6,
+        image: card6.src,
+        title: "Instagram",
+    },
+    {
+        id: 7,
+        image: card7.src,
+        title: "Navigation",
+    },
+    {
+        id: 8,
+        image: card8.src,
+        title: "Page Transitions",
+    },
+    {
+        id: 9,
+        image: card9.src,
+        title: " Media Library",
+    },
+    {
+        id: 10,
+        image: card10.src,
+        title: "Single Project",
     }
 ];

@@ -1,0 +1,12 @@
+<svg width="143.000000" height="90.000000" viewBox="0 0 143 90" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<defs>
+		<clipPath id="clip1_1212">
+			<rect id="IMAGE" width="143.000000" height="90.000000" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<g clip-path="url(#clip1_1212)">
+		<path id="Vector" d="M84.74 0.88C87.17 0.88 89.15 2.85 89.15 5.29L89.15 84.7C89.15 87.14 87.17 89.11 84.74 89.11L5.29 89.11C2.85 89.11 0.88 87.14 0.88 84.7L0.88 5.29C0.88 2.85 2.85 0.88 5.29 0.88L84.74 0.88Z" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="2.000000"/>
+		<path id="Vector" d="M95.33 7.05L112.98 7.05C114.93 7.05 116.51 8.63 116.51 10.58L116.51 79.41C116.51 81.36 114.93 82.94 112.98 82.94L95.33 82.94C93.38 82.94 91.8 81.36 91.8 79.41L91.8 10.58C91.8 8.63 93.38 7.05 95.33 7.05Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+		<path id="Vector" d="M121.81 15L139.46 15C141.41 15 143 16.58 143 18.52L143 71.47C143 73.41 141.41 75 139.46 75L121.81 75C119.86 75 118.28 73.41 118.28 71.47L118.28 18.52C118.28 16.58 119.86 15 121.81 15Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+	</g>
+</svg>

@@ -19,3 +19,12 @@ export const ArrowTop = ({onClick}: Event) => (
               fill="#000000" fillOpacity="1.000000" fillRule="nonzero"/>
     </svg>
 );
+
+
+export const Add = () => (
+    <svg width="22.000000" height="23.000000" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path id="Vector"
+              d="M9.43 22.75L12.31 22.75L12.31 11.81L21.86 11.81L21.86 9.17L12.31 9.17L12.31 -0.53L9.43 -0.53L9.43 9.17L-0.12 9.17L-0.12 11.81L9.43 11.81L9.43 22.75Z"
+              fill="#FFFFFF" fillOpacity="1.000000" fillRule="nonzero"/>
+    </svg>
+);
