@@ -1,0 +1,26 @@
+@import "src/styles/breakpoints.module";
+@import "src/styles/variables.module";
+
+.Features {
+  padding-top: 60px;
+  background: $color-white;
+
+  .topPart {
+    margin-bottom: 100px;
+  }
+
+  .title {
+    margin-top: 55px;
+    max-width: 800px;
+
+    @include size-tablet {
+      line-height: 60px !important;
+      max-width: 500px;
+    }
+
+    @include size-phone-small {
+      line-height: 45px !important;
+      max-width: 500px
+    }
+  }
+}

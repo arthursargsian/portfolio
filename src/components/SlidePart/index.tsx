@@ -13,11 +13,11 @@ const SlidePart = () => {
     const sliderRef = useRef<Slider>(null);
 
     const settings = {
-        dots: true,
         infinite: true,
         speed: 200,
         slidesToShow: 1,
         slidesToScroll: 1,
+        dots: false,
     };
 
     return (
