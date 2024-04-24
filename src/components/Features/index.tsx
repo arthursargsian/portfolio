@@ -2,7 +2,7 @@ import React from 'react';
 import styles from "./Features.module.scss";
 import SubLine from "@/components/SubLine";
 import {Typography} from "@/components/UI/Typography";
-import AnimationPart from "@/components/AnimationPart";
+import AnimationPart from "../Services/AnimationService";
 
 const Features = () => {
     return (

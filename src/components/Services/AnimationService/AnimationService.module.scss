@@ -1,0 +1,57 @@
+@import "../../../styles/variables.module";
+@import "../../../styles/breakpoints.module";
+
+.AnimationService {
+  width: 100%;
+  display: flex;
+
+  @include size-phone-large {
+    display: unset;
+  }
+
+  .desc {
+    width: 50%;
+    background: $color-primary;
+    padding: 40px;
+
+    @include size-phone-large {
+      width: 100%;
+    }
+
+    .button {
+      padding: 5px 20px;
+      margin: 20px 0 20px;
+    }
+  }
+
+  .image {
+    width: 50%;
+    background: $color-primary;
+
+    @include size-phone-large {
+      width: 100%;
+    }
+  }
+
+  .title{
+    @include size-laptop {
+      font-size: 40px;
+    }
+
+    @include size-tablet {
+      font-size: 30px;
+    }
+  }
+
+  .description {
+    max-width: 330px;
+    margin-top: 40px;
+    line-height: 33px !important;
+
+    @include size-laptop {
+      font-size: 15px;
+      margin-top: 15px;
+      line-height: 25px !important;
+    }
+  }
+}

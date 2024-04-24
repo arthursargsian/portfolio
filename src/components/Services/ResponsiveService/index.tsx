@@ -1,13 +1,13 @@
 import React from 'react';
-import styles from "./AnimationPart.module.scss";
-import backimage from "@/../public/image/feature.jpeg";
+import styles from "./AnimationService.module.scss";
+import backimage from "../../../../public/image/feature.jpeg";
 import {Typography} from "@/components/UI/Typography";
 import ResponsiveImage from "@/components/UI/ResponsiveImage";
 import Button from "@/components/UI/Button";
 
-const AnimationPart = () => {
+const AnimationService = () => {
     return (
-        <div className={styles.AnimationPart}>
+        <div className={styles.AnimationService}>
 
             <div className={styles.desc}>
                 <Typography
@@ -61,4 +61,4 @@ const AnimationPart = () => {
     );
 };
 
-export default AnimationPart;
+export default AnimationService;
