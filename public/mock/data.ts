@@ -14,6 +14,10 @@ import worker6 from "../image/6jpeg.jpeg";
 import worker7 from "../image/7jpeg.jpeg";
 import worker8 from "../image/8jpeg.jpeg";
 
+import image1 from "../image/car.png";
+import image2 from "../image/spacejpg.jpg";
+import image3 from "../image/camerajpg.jpg";
+
 export const brands = [
     {id: 1, logo: brand1},
     {id: 2, logo: brand2},
@@ -21,7 +25,7 @@ export const brands = [
     {id: 4, logo: brand4},
     {id: 5, logo: brand5},
     {id: 6, logo: brand6},
-]
+];
 
 
 export const workers: any = [
@@ -33,4 +37,28 @@ export const workers: any = [
     {id: 6, avatar: worker6, name: "Louise Mertens", position: "Illustrator & artist"},
     {id: 7, avatar: worker7, name: "Tina Smith", position: "Independent art director & designer"},
     {id: 8, avatar: worker8, name: "Tom Contino", position: "Founder, creative directo"},
+];
+
+export const data = [
+    {
+        id: 1,
+        image: image1.src,
+        title: "For creatives with exceptional taste and talent.",
+        subtitle: "Semplice is for",
+        description: "3D Designers",
+    },
+    {
+        id: 2,
+        image: image2.src,
+        title: "For creatives with exceptional taste and talent.",
+        subtitle: "Semplice is for",
+        description: "3D Designers",
+    },
+    {
+        id: 3,
+        image: image3.src,
+        title: "For creatives with exceptional taste and talent.",
+        subtitle: "Semplice is for",
+        description: "3D Designers",
+    }
 ]

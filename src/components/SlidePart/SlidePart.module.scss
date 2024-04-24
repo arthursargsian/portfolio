@@ -1,0 +1,56 @@
+@import "src/styles/breakpoints.module";
+
+.SlidePart {
+  width: 100%;
+
+  .title {
+    margin-top: 55px;
+    max-width: 800px;
+
+    @include size-tablet {
+      line-height: 60px !important;
+      max-width: 500px;
+    }
+
+    @include size-phone-small {
+      line-height: 45px !important;
+      max-width: 500px
+    }
+  }
+
+  .slider {
+    width: 100% !important;
+    height: 100vh !important;
+    position: relative;
+  }
+
+  .image {
+    width: 100% !important;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+  }
+
+  .sliderContainer {
+    padding: 60px 0 80px;
+  }
+
+  .slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100vh - (60px + 80px));
+  }
+
+  .control {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  .arrows {
+    display: flex;
+    gap: 1px;
+  }
+}

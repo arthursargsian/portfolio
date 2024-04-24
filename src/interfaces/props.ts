@@ -4,6 +4,10 @@ export interface Children {
     children: ReactNode;
 }
 
+export interface ClassName {
+    [classes: string]: string;
+}
+
 export interface Event {
     onClick?: () => void
 }
