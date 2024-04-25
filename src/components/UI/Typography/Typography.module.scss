@@ -112,6 +112,10 @@
 
 .typography-20 {
   font-size: var(--font-size-20);
+
+  @include size-tablet {
+    font-size: var(--font-size-16);
+  }
 }
 
 .typography-19 {

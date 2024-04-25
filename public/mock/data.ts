@@ -39,6 +39,10 @@ import card8 from "@/../public/svg/transitionsvg.svg"
 import card9 from "@/../public/svg/image.svg"
 import card10 from "@/../public/svg/singlesvg.svg"
 
+import product1 from "@/../public/image/product1.jpeg";
+import product2 from "@/../public/image/product2jpeg.jpeg";
+import product3 from "@/../public/image/product3jpeg.jpeg";
+
 export const brands = [
     {id: 1, logo: brand1},
     {id: 2, logo: brand2},
@@ -146,4 +150,19 @@ export const showcaseList = [
     {id: 6, path: showcase6.src},
     {id: 7, path: showcase7.src},
     {id: 8, path: showcase8.src},
+]
+
+export const buttons = [
+    {id: 1, href: "", title: "Exterior poster & signage"},
+    {id: 2, href: "", title: "Premium Black Flag"},
+    {id: 3, href: "", title: "Black Business Card"},
+    {id: 4, href: "", title: "Gestures Collection"},
+    {id: 5, href: "", title: "Design Language"},
+    {id: 6, href: "", title: "Wireframing Kit"},
+]
+
+export const products = [
+    {id: 1, image: product1.src, name: "Smart Watch Pack", desc: "4 scenes, $12"},
+    {id: 2, image: product2.src, name: "Handheld Device", desc: "6 scenes, $14"},
+    {id: 3, image: product3.src, name: "Premium Black Flag", desc: "6 scenes, $15"},
 ]

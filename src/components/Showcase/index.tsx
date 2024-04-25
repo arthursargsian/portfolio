@@ -36,7 +36,7 @@ const Showcase = () => {
                     color={"secondary"}
                     letterSpacing={2}
                 >
-                    See their portfolios
+                    → See their portfolios
                 </Typography>
             </div>
 

@@ -1,0 +1,67 @@
+@import "src/styles/variables.module";
+@import "src/styles/breakpoints.module";
+
+.Resources {
+  width: 100%;
+  padding: 60px 0;
+  background-color: $color-orange;
+
+  .title {
+    margin-top: 55px;
+    max-width: 80rem;
+
+    @include size-tablet {
+      line-height: 60px !important;
+      max-width: 500px;
+    }
+
+    @include size-phone-small {
+      line-height: 45px !important;
+      max-width: 500px
+    }
+  }
+
+  .description {
+    margin: 22px 0 170px 0;
+
+    @include size-laptop {
+      margin: 22px 0 40px 0;
+    }
+
+  }
+
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 70px;
+    max-width: 50rem;
+  }
+
+  .button {
+    padding: 10px 25px;
+    border-radius: 20px;
+  }
+
+  .productsList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(31%, 1fr));
+    gap: 40px;
+
+    @include size-tablet {
+      gap: 20px;
+    }
+
+    @include size-laptop {
+      grid-template-columns: repeat(auto-fit, minmax(23%, 1fr));
+    }
+
+    @include size-phone-large {
+      grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+    }
+
+    @include size-phone-small {
+      grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+    }
+  }
+}

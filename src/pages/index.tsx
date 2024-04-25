@@ -5,6 +5,7 @@ import SlidePart from "@/components/SlidePart";
 import Features from "@/components/Features";
 import Technical from "../components/Technical";
 import Showcase from "@/components/Showcase";
+import Resources from "@/components/Resources";
 
 export default function Home() {
     return (
@@ -16,6 +17,7 @@ export default function Home() {
             <Features/>
             <Technical/>
             <Showcase/>
+            <Resources/>
         </>
     );
 }

@@ -1,0 +1,25 @@
+@import "src/styles/variables.module";
+@import "src/styles/breakpoints.module";
+
+.ProductCard {
+  width: 100%;
+  cursor: pointer;
+  overflow: hidden;
+  background-color: $color-white;
+
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .description {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+
+    @include size-tablet {
+      padding: 15px 10px;
+    }
+  }
+}

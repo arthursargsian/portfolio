@@ -31,13 +31,14 @@ const Workers = () => {
                 </Typography>
 
                 <Typography
+                    className={styles.description}
                     element={"p"}
                     size={32}
                     weight={"normal"}
                     color={"grey"}
                     letterSpacing={2}
                 >
-                    See their portfolios
+                    → See their portfolios
                 </Typography>
 
                 <Brands/>
