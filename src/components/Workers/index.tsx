@@ -31,7 +31,6 @@ const Workers = () => {
                 </Typography>
 
                 <Typography
-                    className={styles.description}
                     element={"p"}
                     size={32}
                     weight={"normal"}

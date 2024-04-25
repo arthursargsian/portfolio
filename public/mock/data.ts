@@ -18,6 +18,16 @@ import image1 from "../image/car.png";
 import image2 from "../image/spacejpg.jpg";
 import image3 from "../image/camerajpg.jpg";
 
+import showcase1 from "@/../public/image/showcase1.png";
+import showcase2 from "@/../public/image/showcase2.jpeg";
+import showcase3 from "@/../public/image/showcase3.jpeg";
+import showcase4 from "@/../public/image/showcase4.png";
+import showcase5 from "@/../public/image/showcase5.jpeg";
+import showcase6 from "@/../public/image/showcase6.jpeg";
+import showcase7 from "@/../public/image/4324.png";
+import showcase8 from "@/../public/image/5243.png"
+
+
 import card1 from "@/../public/svg/ba.svg";
 import card2 from "@/../public/svg/fribbble.svg";
 import card3 from "@/../public/svg/block.svg";
@@ -125,3 +135,15 @@ export const cards = [
         title: "Single Project",
     }
 ];
+
+
+export const showcaseList = [
+    {id: 1, path: showcase1.src},
+    {id: 2, path: showcase2.src},
+    {id: 3, path: showcase3.src},
+    {id: 4, path: showcase4.src},
+    {id: 5, path: showcase5.src},
+    {id: 6, path: showcase6.src},
+    {id: 7, path: showcase7.src},
+    {id: 8, path: showcase8.src},
+]
