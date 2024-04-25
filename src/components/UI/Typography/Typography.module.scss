@@ -88,6 +88,14 @@
 
 .typography-39 {
   font-size: var(--font-size-39);
+
+  @include size-tablet {
+    font-size: var(--font-size-20);
+  }
+
+  @include size-phone-small {
+    font-size: var(--font-size-20);
+  }
 }
 
 .typography-32 {

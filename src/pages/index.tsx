@@ -6,6 +6,7 @@ import Features from "@/components/Features";
 import Technical from "../components/Technical";
 import Showcase from "@/components/Showcase";
 import Resources from "@/components/Resources";
+import Footer from "@/components/layout/Footer";
 
 export default function Home() {
     return (
@@ -18,6 +19,7 @@ export default function Home() {
             <Technical/>
             <Showcase/>
             <Resources/>
+            <Footer/>
         </>
     );
 }

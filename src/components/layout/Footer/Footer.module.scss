@@ -1,0 +1,67 @@
+@import "src/styles/breakpoints.module";
+
+.Footer {
+  padding: 60px 0;
+
+  hr {
+    margin: 20px 0;
+  }
+
+  .head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    p {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+
+      span {
+        margin-top: -3px;
+      }
+    }
+  }
+
+  .footerBellow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include size-phone-small {
+      flex-direction: column;
+      gap: 20px;
+      align-items: flex-start;
+    }
+
+
+    li {
+      cursor: pointer;
+    }
+
+    .types {
+      display: flex;
+      column-gap: 50px;
+      row-gap: 10px;
+
+      @include size-phone-large {
+        flex-direction: column;
+      }
+
+      ul {
+        list-style-type: none;
+        max-width: 500px;
+      }
+    }
+
+    .tipsTricks {
+      h6 {
+        margin-bottom: 15px;
+      }
+
+      ul {
+        list-style-type: none;
+      }
+    }
+  }
+}
