@@ -7,7 +7,7 @@ import ResponsiveService from "@/components/Services/ResponsiveService";
 
 const Features = () => {
     return (
-        <div className={styles.Features}>
+        <div className={styles.Features} id={"features"}>
             <div className="container">
                 <div className={styles.topPart}>
                     <SubLine

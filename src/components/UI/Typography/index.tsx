@@ -21,7 +21,8 @@ export const Typography = (props: TypographyProps) => {
         onClick,
         style,
         letters,
-        cursor
+        cursor,
+        href
     } = props;
 
     const classes = classNames(
@@ -56,6 +57,7 @@ export const Typography = (props: TypographyProps) => {
 
     return (
         <Component
+            href={href}
             className={classes}
             onClick={onClick}
             style={{

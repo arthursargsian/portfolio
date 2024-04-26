@@ -8,7 +8,7 @@ import ProductCard from "@/components/ProductCard";
 
 const Resources = () => {
     return (
-        <div className={styles.Resources}>
+        <div className={styles.Resources} id={"resources"}>
             <div className="container">
                 <SubLine
                     colorLine={"black"}

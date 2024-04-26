@@ -7,7 +7,7 @@ import {showcaseList} from "../../../public/mock/data";
 
 const Showcase = () => {
     return (
-        <div className={styles.Showcase}>
+        <div className={styles.Showcase} id={"showcase"}>
             <div className="container">
                 <SubLine
                     colorLine={"white"}

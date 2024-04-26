@@ -9,10 +9,10 @@ import {ArrowTop} from "@/../public/svg";
 const MainHeader = () => {
 
     const route = [
-        {id: 1, name: "Simple V6", path: "/", new: true},
-        {id: 2, name: "SHOWCASE", path: "/showcase", new: false},
-        {id: 3, name: "FEATURES", path: "/features", new: false},
-        {id: 4, name: "RESOURCES", path: "/resources", new: false}
+        {id: 1, name: "Simple V6", path: "/", new: true, fragment: "#v6"},
+        {id: 2, name: "SHOWCASE", path: "/showcase", new: false, fragment: "#showcase"},
+        {id: 3, name: "FEATURES", path: "/features", new: false, fragment: "#features"},
+        {id: 4, name: "RESOURCES", path: "/resources", new: false, fragment: "#resources"}
     ]
 
     return (

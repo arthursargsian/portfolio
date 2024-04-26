@@ -10,6 +10,7 @@ import {Typography} from "@/components/UI/Typography";
 const EditPart = () => {
     return (
         <div
+            id={"v6"}
             className={styles.EditPart}
             style={{
                 backgroundImage: `url(${background.src})`

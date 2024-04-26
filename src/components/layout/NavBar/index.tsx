@@ -23,6 +23,8 @@ const NavBar = ({route}: NavigationProps) => {
                             New
                         </Typography>}
                         <Typography
+                            href={item.fragment}
+                            element={"a"}
                             letters={"uppercase"}
                             size={19}
                             letterSpacing={1.5}

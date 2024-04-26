@@ -20,6 +20,7 @@ export interface Route {
     id: number
     name: string
     path: string
+    fragment: string
     new: boolean
 }
 
@@ -41,6 +42,7 @@ export interface TypographyProps {
     style?: React.CSSProperties
     letters?: 'uppercase' | 'lowercase' | 'capitalize' | 'titlecase'
     cursor?: 'pointer'
+    href?: string
 }
 
 export interface ButtonProps {
