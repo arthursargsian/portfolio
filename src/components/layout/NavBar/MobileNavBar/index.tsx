@@ -18,7 +18,7 @@ const MobileNavBar = ({route}: NavigationProps) => {
             document.body.style.overflowY = 'auto';
         }
     }, [isOpen]);
-    console.log(route)
+
     return (
         <header className={styles.MobileNavBar}>
             <Burger onClick={() => setOpen((prev) => !prev)}/>
@@ -37,6 +37,7 @@ const MobileNavBar = ({route}: NavigationProps) => {
                             New
                         </Typography>}
                             <Typography
+                                element={"a"}
                                 onClick={() => setOpen((prev) => !prev)}
                                 letters={"uppercase"}
                                 size={16}
